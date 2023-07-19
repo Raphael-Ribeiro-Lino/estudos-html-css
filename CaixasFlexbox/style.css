@@ -1,0 +1,94 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #034;
+    position: sticky;
+    top:0;
+    left: 0;
+    width: 100%;
+}   
+
+header > h1{
+    color: wheat;
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+}
+
+
+li{
+    display: block;
+    padding: 10px;
+    margin: 10px;
+}
+
+li > a{
+    color: wheat;
+    font-size: 1.2rem;
+}
+
+body > h1{
+    margin: 50px;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.flex > div {
+    margin: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.568);
+}
+
+.caixa{
+    height: 150px;
+    width: 280px;
+    background-color: #BEBCBE;
+    flex: 1 1 300px;
+    background-image: url('https://raw.githubusercontent.com/origamid/publico/main/css-grid-layout-e-flexbox-quando-utilizar/grid-flexbox_final/img/lobo2.jpg');
+    background-size: cover;
+}
+
+div > p{
+    text-align: center;
+    padding: 10px;
+    background-color: #BEBCBE;
+    border-top: 1px dashed rgba(0, 0, 0, 0.568);
+}
+
+footer > p{
+    background: #034;
+    color: wheat;
+    padding: 20px;
+    text-align: center;
+}
+
+footer > p > a{
+    color: wheat;
+    text-decoration: none;
+}
+
+footer > p > a:hover{
+    text-decoration: underline;
+    color: white;
+    transition: color 1s;
+}
