@@ -1,0 +1,237 @@
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('opentype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+main {
+    min-height: 100vh;
+    background-color: #F2F0F1;
+    font-family: 'Hanken Grotesk', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    background-color: #fff;
+    height: 450px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px 0px #EAF0FC;
+}
+
+.result {
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result>h3 {
+    margin: 15px;
+    color: hsl(241, 100%, 89%);
+}
+
+.circle {
+    border-radius: 50%;
+    height: 180px;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+.circle>h1 {
+    font-size: 50px;
+}
+
+.circle>h4 {
+    font-size: 15px;
+    color: hsl(241, 100%, 89%);
+}
+
+.result>h2 {
+    margin: 15px;
+}
+
+.result>p {
+    text-align: center;
+    font-size: 15px;
+    line-height: 22px;
+    color: hsl(241, 100%, 89%);
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 20px 2vw;
+    width: 50%;
+}
+
+.summary>h3 {
+    margin: 15px 0px;
+}
+
+.reaction {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    color: hsl(0, 100%, 67%);
+    background-color: hsla(0, 100%, 67%, 0.205);
+    gap: 10px;
+}
+
+.data-result {
+    display: grid;
+    width: 90%;
+}
+
+.data-result>p {
+    font-weight: bold;
+    color: black;
+    justify-self: end;
+}
+
+.memory {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    color: hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56%, 0.205);
+    gap: 10px;
+}
+
+.verbal {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    color: hsl(166, 100%, 37%);
+    background-color: hsla(166, 100%, 37%, 0.205);
+    gap: 10px;
+}
+
+.visual {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    color: hsl(234, 85%, 45%);
+    background-color: hsla(234, 85%, 45%, 0.205);
+    gap: 10px;
+}
+
+.max-result {
+    font-weight: bold;
+    color: rgba(128, 128, 128, 0.651);
+}
+
+.btn {
+    width: 100%;
+    height: 50px;
+    border-radius: 50px;
+    border: 0;
+    outline: 0;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    background-color: hsl(224, 30%, 27%);
+    font-size: 15px;
+}
+
+.btn:hover {
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    transition: all 0.3s;
+}
+
+@media screen and (max-width: 425px) {
+
+    body,
+    main {
+        min-height: 100vh;
+        max-width: 100%;
+    }
+
+    .container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .result {
+        width: 100%;
+        padding: 2rem 3rem;
+        border-radius: 0;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+
+    .result>h3 {
+        margin: 0;
+        padding-bottom: 15px;
+    }
+
+    .circle {
+        height: 130px;
+        width: 130px;
+        margin: 1rem;
+    }
+
+    .summary {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 2rem;
+        gap: 1.5rem;
+        width: 100%;
+        margin: 0;
+    }
+
+    .reaction {
+        width: 100%;
+    }
+
+    .memory {
+        width: 100%;
+    }
+
+    .verbal {
+        width: 100%;
+    }
+
+    .visual {
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
